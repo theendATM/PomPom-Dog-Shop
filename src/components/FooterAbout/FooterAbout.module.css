@@ -1,0 +1,27 @@
+.about{
+    display: flex;
+    flex-direction: column;
+    height: 45px;
+    justify-content: space-evenly;
+}
+
+.title{
+    display: flex;
+    gap: 4px;
+    align-items: center;
+
+    height: 18px;
+
+    color: #8F8E81;
+    font-size: 12px;
+}
+
+.icon {
+    height: 16px;
+    width: 16px;
+}
+
+.about > p{
+    font-size: 16px;
+    color: #5A584C;
+}
