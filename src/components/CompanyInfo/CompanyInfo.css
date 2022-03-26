@@ -1,0 +1,33 @@
+.CompanyInfo{
+    width: 77%;
+}
+
+h1{
+    font-size: 48px;
+    line-height: 56px;
+    text-transform: uppercase;
+    margin: 0;
+}
+p{
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.mainBanner{
+    background-color: #EEC447;
+    height: 500px;
+    margin-top: 50px;
+    margin-bottom: 72px;
+}
+
+.mainBanner img{
+    height: 500px;
+}
+
+.mainInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+    margin-bottom: 100px;
+}

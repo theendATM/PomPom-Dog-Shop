@@ -7,7 +7,7 @@ function PetCard(){
 
     return(
         <div className="petBlock">
-            <img className="petPhoto" src={pet}/>
+            <img className="petPhoto" src={pet} alt="пёсель"/>
             <div className="petInfo">
                 <p className="breed subheading">Самоед щенок</p>
                 <p className="age avarage">4 месяца</p>

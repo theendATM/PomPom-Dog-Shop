@@ -3,6 +3,7 @@ import './App.css';
 import { Header, Footer } from './components';
 import AnimalsList from './components/AnimalsList/AnimalsList.js'
 import AnimalsFilter from './components/AnimalsFilter/AnimalsFilter';
+import CompanyInfo from './components/CompanyInfo/CompanyInfo';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
     // </div>
     <div className="App">
         <Header />
+        <CompanyInfo/>
         <Footer />
     </div>
   );

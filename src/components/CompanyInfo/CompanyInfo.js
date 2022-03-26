@@ -1,0 +1,21 @@
+import React from "react";
+import "./CompanyInfo.css"
+import banner from "./banner.svg"
+
+function CompanyInfo(){
+
+    return(
+        <div className="CompanyInfo">
+            <div className="mainBanner">
+                <img src={banner} alt="наш баннер"></img>
+            </div>
+
+            <div className="mainInfo">
+                <h1>НАШ МАГАЗИН</h1>
+                <p>Здесь информация о идее этого проекта, его создании и создателях.</p>
+            </div>
+        </div>
+    )
+}
+
+export default CompanyInfo
