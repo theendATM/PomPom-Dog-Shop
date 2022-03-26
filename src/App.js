@@ -4,6 +4,8 @@ import { Header, Footer } from './components';
 import AnimalsList from './components/AnimalsList/AnimalsList.js'
 import AnimalsFilter from './components/AnimalsFilter/AnimalsFilter';
 import CompanyInfo from './components/CompanyInfo/CompanyInfo';
+import AuthorizationLogIn from './components/Authorization/AuthorizationLogIn';
+import AuthorizationSignUp from './components/Authorization/AuthorizationSignUp';
 
 function App() {
   return (
@@ -14,10 +16,17 @@ function App() {
     //   <AnimalsList/>
     //   <Footer />
     // </div>
+
+    // //             СТРАНИЦА О НАС
+    // <div className="App">
+    //     <Header />
+    //     <CompanyInfo/>
+    //     <Footer />
+    // </div>
+
     <div className="App">
-        <Header />
-        <CompanyInfo/>
-        <Footer />
+      <AuthorizationLogIn/>
+      <AuthorizationSignUp/>
     </div>
   );
 }

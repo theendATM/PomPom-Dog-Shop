@@ -1,0 +1,23 @@
+import React from "react";
+import "./AuthorizationLogIn.css"
+import AuthorizationSignUp from "./AuthorizationSignUp.js"
+
+function AuthorizationLogIn(){
+
+    return(
+        <div className="AuthorizationLogIn">
+            <h3>POMPOM</h3>
+            <p>Войти с помощью электронной почты</p>
+            <div className="formButtons">
+                <input type="email" name="email" required placeholder="E-mail"/>
+                <input type="password" name="password" required placeholder="Пароль"/>
+                <input className="enterButton" type="submit" value="Войти" name="enterButton"/>
+            </div>
+            <p className="signUpRef">Загегистрироваться</p>
+
+
+        </div>
+    )
+}
+
+export default AuthorizationLogIn
