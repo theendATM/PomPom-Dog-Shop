@@ -1,0 +1,9 @@
+.AnimalsList{
+    display: grid;
+    column-gap: 77px;
+    row-gap: 40px;
+    grid-template-columns: repeat(auto-fit, 320px);
+    width: 77%;
+    justify-content: center;
+    
+}

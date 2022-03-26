@@ -1,0 +1,41 @@
+.petBlock{
+    width: 320px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.subheading{
+    font-size: 24px;
+    line-height: 30px;
+}
+.avarage{
+    font-size: 16px;
+    line-height: 22px;
+}
+.avarageBig{
+    font-size: 20px;
+    line-height: 26px;
+}
+.petInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+}
+
+.price{
+    padding-top: 20px;
+}
+
+.breed{
+    padding-top: 16px;
+}
+
+.petPhoto{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}

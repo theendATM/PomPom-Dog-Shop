@@ -1,0 +1,25 @@
+.AnimalsFilter{
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 93%;
+    margin-top: 28px;
+    margin-bottom: 36px;
+    
+}
+select{
+    font: inherit;
+    letter-spacing: inherit;
+    word-spacing: inherit;
+    height: 54px;
+    font-size: 20px;
+    line-height: 28px;
+    padding-left: 20px;
+    padding-right: 20px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url("./ChooseSign.svg");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 20px);
+}
