@@ -3,11 +3,14 @@ import style from './Button.module.css';
 
 export const Button = (props) => {
 
-    const buttonFontSize = {
-        fontSize: `${props.fontSize}px`
+
+
+    const buttonStyle = {
+        fontSize: `${props.fontSize}px`,
+        border: props.isBorder ? "1px solid black" : "none"  
     }
 
     return (
-        <div className={style.button} style={buttonFontSize}>{props.text}</div>
+        <a className={style.button} style={buttonStyle} href=''>{props.text}</a>
     )
 }
