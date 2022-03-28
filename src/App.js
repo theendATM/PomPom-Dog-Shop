@@ -6,6 +6,7 @@ import AnimalsFilter from './components/AnimalsFilter/AnimalsFilter';
 import CompanyInfo from './components/CompanyInfo/CompanyInfo';
 import AuthorizationLogIn from './components/Authorization/AuthorizationLogIn';
 import AuthorizationSignUp from './components/Authorization/AuthorizationSignUp';
+import { Router } from 'react-router-dom';
 
 function App() {
   return (
