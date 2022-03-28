@@ -3,4 +3,7 @@
     background-color: var(--yellow);
     border-radius: 10px;
     font-family: 'Open Sans';
+    max-width: fit-content;
+    text-decoration: none;
+    color: black;
 }

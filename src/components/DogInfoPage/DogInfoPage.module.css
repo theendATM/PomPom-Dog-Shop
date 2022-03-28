@@ -1,0 +1,156 @@
+.dogInfoPage{
+    width: 100%;
+    padding: 13px 50px;
+    box-sizing: border-box;
+}
+
+.returnBackButton{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 4px;
+    width: fit-content;
+
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.dogInfo{
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    height: fit-content;
+}
+
+.dogPicture{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 8px;
+
+    height: 478px;
+    width: 57.5%;
+    border-radius: 10px;
+}
+
+.dogPictureButtons{
+    display: flex;
+    width: 600px;
+    gap: 6px;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+}
+
+.dogPictureButtons > a{
+    flex: 1;
+    background-color:  rgba(240, 240, 240, 0.7);
+    border-radius: 5px;
+    height: 6px;
+}
+.dogProfile{
+    width: 40.8%;
+    
+}
+
+.dogMainInfo{
+    background-color: var(--yellow);
+    height: 264px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 28px 32px;
+    box-sizing: border-box;
+
+    margin-bottom: 33px;
+}
+
+.infoBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 100%;
+}
+
+
+.dogText{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.dogPrice{
+    font-size: 24px;
+}
+
+.dogName{
+    font-size: 32px;
+}
+
+.dogDescription{
+    font-size: 20px;
+}
+
+.dogTextBottom{
+    width: 100%;
+
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.addInfo{
+    width: 442px;
+    margin-left: 52px;
+}
+
+.addInfoText{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.dogParams{
+    margin-top: 41px;
+
+    display: flex;
+    gap: 20px;
+}
+
+.dogHistory{
+    display: flex;
+    gap: 20px;
+
+    margin-top: 30px;
+}
+
+.reccomendations{
+    margin-top: 70px;
+    width: 100%;
+}
+
+.sepLine{
+    width: 100%;
+    border: 1px solid #C5C2B3;
+}
+
+.similar{
+    margin-top: 16px;
+    width: 100%;
+    padding: 0 30px;
+}
+
+.watched{
+    margin-top: 63px;
+    width: 100%;
+    padding: 0 30px;
+}
+
+.dogShowcase{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 77px;
+}

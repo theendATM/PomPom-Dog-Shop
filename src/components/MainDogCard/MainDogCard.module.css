@@ -1,0 +1,35 @@
+.dogCard{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.dogCardHover{
+    display: none;
+}
+
+.dogCardHover > p{
+    font-size: 24px;
+    background-color: #bdbdbd;
+    border-radius: 5px;
+    padding: 0 5px;
+}
+
+
+.dogCard:hover .dogCardHover{
+    box-sizing: border-box;
+
+    width: 100%;
+    height: 100%;
+
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    padding-bottom: 25px;
+
+    outline: 2px solid #FFD300;
+    border-radius: 10px;
+    display: flex;
+}
+
+

@@ -3,3 +3,7 @@ export * from './Header';
 export * from './Navigation_Button';
 export * from './Button';
 export * from './FooterAbout';
+export * from './Main';
+export * from './MainDogCard';
+export * from './DogInfoPage';
+export * from './DogInfoBox';
