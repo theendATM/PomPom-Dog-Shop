@@ -6,8 +6,6 @@ function AuthorizationSignUp(){
 
     return(
         <div className="AuthorizationSignUp">
-            
-           
             <h3>POMPOM</h3>
             <img className="cross" src={Cross}/>
             
@@ -21,6 +19,7 @@ function AuthorizationSignUp(){
             
             <p className="enterRef">Войти</p>
         </div>
+        
     )
 }
 
