@@ -1,11 +1,16 @@
 import React from "react";
 import "./AuthorizationSignUp.css"
+import Cross from "./Vector.svg"
 
 function AuthorizationSignUp(){
 
     return(
         <div className="AuthorizationSignUp">
+            
+           
             <h3>POMPOM</h3>
+            <img className="cross" src={Cross}/>
+            
             <p>Регистрация</p>
             <div className="formButtons">
                 <input type="text" name="name" required placeholder="Имя"/>

@@ -7,7 +7,13 @@
     background-color: #F4F5F4;
     border-radius: 10px;
 }
-
+.cross{
+    position: absolute;
+    align-self:flex-end;
+    padding-right: 20px;
+    margin-top: 20px;
+    
+}
 h3{
     background-color: #FFD300;
     padding: 0;

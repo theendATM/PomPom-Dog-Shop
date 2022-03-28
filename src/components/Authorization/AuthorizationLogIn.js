@@ -1,12 +1,14 @@
 import React from "react";
 import "./AuthorizationLogIn.css"
 import AuthorizationSignUp from "./AuthorizationSignUp.js"
+import Cross from "./Vector.svg"
 
 function AuthorizationLogIn(){
 
     return(
         <div className="AuthorizationLogIn">
             <h3>POMPOM</h3>
+            <img className="cross" src={Cross}/>
             <p>Войти с помощью электронной почты</p>
             <div className="formButtons">
                 <input type="email" name="email" required placeholder="E-mail"/>
