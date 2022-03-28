@@ -26,8 +26,7 @@ function App() {
     // </div>
 
     <div className="App">
-      <AuthorizationLogIn/>
-      <AuthorizationSignUp/>
+      <AuthorizationLogIn />
     </div>
   );
 }
