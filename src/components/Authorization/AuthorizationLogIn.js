@@ -3,9 +3,11 @@ import "./AuthorizationLogIn.css"
 import AuthorizationSignUp from "./AuthorizationSignUp.js"
 import Cross from "./Vector.svg"
 
+
 function AuthorizationLogIn(){
 
     return(
+        
         <div className="AuthorizationLogIn">
             <h3>POMPOM</h3>
             <img className="cross" src={Cross}/>
@@ -15,7 +17,7 @@ function AuthorizationLogIn(){
                 <input type="password" name="password" required placeholder="Пароль"/>
                 <input className="enterButton" type="submit" value="Войти" name="enterButton"/>
             </div>
-            <p className="signUpRef">Загегистрироваться</p>
+            <p className="signUpRef">Зарегистрироваться</p>
 
 
         </div>
