@@ -6,8 +6,10 @@
     margin-top: 28px;
     margin-bottom: 36px;
     
+    filter: drop-shadow(3px 3px 16px rgba(31, 71, 101, 0.05));
 }
 select{
+    appearance: none;
     font: inherit;
     letter-spacing: inherit;
     word-spacing: inherit;
@@ -22,4 +24,13 @@ select{
     background-image: url("./ChooseSign.svg");
     background-repeat: no-repeat;
     background-position: calc(100% - 20px);
+    border: 0;
+    border-radius:0;
+
+    outline: #C5C2B3;
+    
+}
+
+select:focus{
+    border: medium;
 }
