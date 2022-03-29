@@ -12,13 +12,13 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <Routes>
 
+        <CompanyInfo/> {/*for debug purposes*/}
+        
+        {/* <Routes>
           <Route path='/signup' element={<AuthorizationSignUp />} />
           <Route path='/login' element={<AuthorizationLogIn />} />
-
-
-        </Routes>
+        </Routes> */}
       </div>
     </BrowserRouter>
   );
