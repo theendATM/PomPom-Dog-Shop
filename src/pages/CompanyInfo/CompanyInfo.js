@@ -1,7 +1,7 @@
 import React from "react";
 import "./CompanyInfo.css"
 import banner from "./banner.svg"
-import { PageBase } from "../../pages/PageBase";
+import { PageBase } from "../PageBase";
 
 function CompanyInfo() {
 
