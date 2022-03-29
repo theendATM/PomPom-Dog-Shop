@@ -3,7 +3,7 @@ import pet from "./pet.png";
 import "./PetCard.css";
 
 
-function PetCard(){
+function PetCard(props){
 
     return(
         <div className="petBlock">
