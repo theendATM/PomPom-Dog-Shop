@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import { Header, Footer, DogInfoBox, MainDogCard } from './components';
+import { Main } from './pages/Main/Main';
 import { DogInfoPage } from './pages/DogInfoPage';
 import AnimalsList from './components/AnimalsList/AnimalsList.js'
 import AnimalsFilter from './components/AnimalsFilter/AnimalsFilter';
@@ -15,7 +16,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path='/all' element={<AllPets />} />
-        <Route path='/' element={<DogInfoPage />} />
+        <Route path='/' element={<Main />} />
         <Route path='/about' element={<CompanyInfo />} />
       </Routes>
     </BrowserRouter>
