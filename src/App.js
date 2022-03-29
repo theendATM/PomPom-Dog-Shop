@@ -11,15 +11,19 @@ import AuthorizationSignUp from './components/Authorization/AuthorizationSignUp'
 import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
 import { AllPets } from './pages/AllPets';
 
+import { createPortal } from 'react-dom';
+
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path='/all' element={<AllPets />} />
-        <Route path='/' element={<Main />} />
-        <Route path='/about' element={<CompanyInfo />} />
-      </Routes>
-    </BrowserRouter>
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/all' element={<AllPets />} />
+          <Route path='/' element={<Main />} />
+          <Route path='/about' element={<CompanyInfo />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
 

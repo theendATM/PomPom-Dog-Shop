@@ -6,6 +6,14 @@
     width: 710px;
     background-color: #F4F5F4;
     border-radius: 10px;
+
+    position: inherit;
+
+    left:50%;
+    margin-left:-355px;
+    top: 118px;
+
+    z-index: 12;
 }
 .cross{
     position: absolute;
@@ -73,4 +81,12 @@ input{
 }
 .enterRef{
     color: #8F8E81;
+}
+
+#authorize-shade{
+    background: rgba(34, 30, 5, 0.3);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 11;
 }
