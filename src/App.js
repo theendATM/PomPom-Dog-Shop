@@ -4,7 +4,7 @@ import { Header, Footer, DogInfoBox, MainDogCard } from './components';
 import { DogInfoPage } from './pages/DogInfoPage';
 import AnimalsList from './components/AnimalsList/AnimalsList.js'
 import AnimalsFilter from './components/AnimalsFilter/AnimalsFilter';
-import CompanyInfo from './components/CompanyInfo/CompanyInfo';
+import CompanyInfo from './pages/CompanyInfo/CompanyInfo';
 import AuthorizationLogIn from './components/Authorization/AuthorizationLogIn';
 import AuthorizationSignUp from './components/Authorization/AuthorizationSignUp';
 import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
@@ -15,7 +15,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path='/all' element={<AllPets />} />
-        <Route path='' element={<DogInfoPage />} />
+        <Route path='/' element={<DogInfoPage />} />
+        <Route path='/about' element={<CompanyInfo />} />
       </Routes>
     </BrowserRouter>
   );
