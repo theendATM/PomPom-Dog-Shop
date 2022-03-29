@@ -3,6 +3,7 @@ import style from './Header.module.css';
 import image from '../../assets/logo.png';
 import { Navigation_Button } from '../Navigation_Button';
 import { Button } from '../Button';
+import burger from '../../mobile/burger.svg';
 
 import {useNavigate} from 'react-router-dom'
 
@@ -16,6 +17,7 @@ export const Header = (props) => {
 
         <header className={style.header}>
             <img className={style.logo} src={image} />
+            <img className={style.burger} src={burger}/>
             <div className={style.header__buttons}>
                 <div className={style.navButtons}>
                     <Navigation_Button text='Главная' onClick={()=>navigate("/")} />

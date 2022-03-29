@@ -7,3 +7,14 @@
     justify-content: center;
     
 }
+
+@media screen and (max-width: 415px) {
+    .AnimalsList{
+         column-gap: 20px;
+         row-gap: 12px;
+         grid-template-columns: repeat(auto-fit, 180px);
+         width: 92%;
+         justify-content: center;
+    }
+   
+}

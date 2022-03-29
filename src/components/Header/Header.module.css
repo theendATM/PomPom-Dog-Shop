@@ -7,6 +7,11 @@
     justify-content: space-between;
 }
 
+.burger{
+    display: none;
+}
+
+
 .logo {
     height: 100px;
     width: 100px;
@@ -30,4 +35,37 @@
     width: 1px;
     height: 30px;
     background-color: #C5C2B3;
+}
+
+
+
+
+
+@media screen and (max-width: 415px) {
+    .burger{
+        display: inline;
+    }
+
+    .header__buttons{
+        display: none;
+    }
+
+    .header{
+        height: 44px;
+        width: 92%;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    .logo {
+        height: 44px;
+        width: 44px;
+    }
+
+    .burger{
+        height: 32px;
+        width: 40px;
+    }
 }

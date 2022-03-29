@@ -39,3 +39,43 @@
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
 }
+
+
+
+
+@media screen and (max-width: 415px) {
+
+    .petBlock{
+        width: 180px;
+        height: 215px;
+    }
+    .subheading{
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .avarage{
+        font-size: 10px;
+        line-height: 15px;
+    }
+    .avarageBig{
+        font-size: 11px;
+        line-height: 16px;
+    }
+
+    .petInfo{
+        padding-left: 12px;
+    }
+
+    .price{
+        padding-top: 12px;
+    }
+    .breed{
+        padding-top: 8px;
+    }
+    .petPhoto{
+        border-top-right-radius: 6px;
+        border-top-left-radius: 6px;
+        width: 180px;
+        height: 140px;
+    }
+}
