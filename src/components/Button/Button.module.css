@@ -16,9 +16,11 @@
         max-width: 100%;
         padding-top: 16px;
         padding-bottom: 16px;
-        padding-left: 26%;
-        padding-right: 26%;
         font-size: 16px;
         line-height: 22px;
+    }
+    .buttonContainer{
+        width: 1vw;
+        background-color: red !important;
     }
 }
