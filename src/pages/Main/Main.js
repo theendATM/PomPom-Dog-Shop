@@ -10,9 +10,11 @@ import sheltiTest from '../../assets/Shelti.png';
 import main_articleImageLeft from '../../assets/main_articleImageLeft.png';
 import main_articleImageRight from '../../assets/main_articleImageRight.png';
 import { PageBase } from '../PageBase';
+import {useNavigate} from 'react-router-dom'
 
 export const Main = () => {
 
+    const navigate=useNavigate()
     return (
         <PageBase>
             <div className={style.main}>
@@ -23,7 +25,7 @@ export const Main = () => {
                             И что-то про собак. Они хорошие. Этот текст довольно длинный.
                             Наверное, еще подлинее. Купите себе собаку.</p>
                         <p className={style.ourText}>а вот второй абзац. Он короткий</p>
-                        <div><Button text='Выбрать питомца' fontSize={20} /></div>
+                        <div><Button text='Выбрать питомца' fontSize={20} onClick={()=>navigate("/all")} /></div>
                     </div>
                     <div className={style.shopPictures}>
                         <img className={style.imgLeft} src={image_left} alt='img_left' />

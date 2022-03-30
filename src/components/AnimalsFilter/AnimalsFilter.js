@@ -2,13 +2,14 @@ import React from "react";
 import "./AnimalsFilter.css"
 
 import { storage } from "../../storage/PomPomStorage";
+import { useSelector } from "react-redux";
 
-function AnimalsFilter(){
+function AnimalsFilter() {
 
-    return(
+    return (
         <div className="AnimalsFilter">
             <select className="sizeSelector" name="sizeSelector">
-                <option hidden name="allSizeDogs">Размер</option> 
+                <option hidden name="allSizeDogs">Размер</option>
                 <option name="smallDogs">Маленькая (до 10кг)</option>
                 <option name="mediumDogs">Средняя (от 10кг до 25кг)</option>
                 <option name="hugeDogs">Большая (от 25кг)</option>
@@ -22,13 +23,13 @@ function AnimalsFilter(){
                 <option name="allHairLength">Любая длина волос</option>
             </select>
 
-            <select className="breedSelector" name="breedSelector" onChange={(e) => storage.dispatch({ type: e.target.value.toLowerCase() })}>
-                <option hidden name="allBreeds">Порода</option>
+            <select className="breedSelector" name="breedSelector" onChange={(e) => { storage.dispatch({ type:"CHANGE",payload: e.target.selectedIndex }) }}>
+                <option hidden name="allBreeds">Любая порода</option>
+                <option name="allBreeds">Любая порода</option>
                 <option name="sheepdog">Овчарка</option>
                 <option name="spitz">Шпиц</option>
                 <option name="shibaInu">Сиба-Ину</option>
                 <option name="akitaInu">Акита-Ину</option>
-                <option name="allBreeds">Любая порода</option>
             </select>
 
             <select name="ageSelector" className="ageSelector">
