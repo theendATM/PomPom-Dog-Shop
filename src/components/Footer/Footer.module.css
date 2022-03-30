@@ -25,16 +25,20 @@
 @media screen and (max-width: 415px) {
     .footer{
         width: 90%;
-        display: inline;
-        height: 270px;
+        flex-direction: column;
+        gap: 0;
+        height: fit-content;
         margin-top: 29px;
+        box-sizing: border-box;
+        padding: 16px 20px;
     }
 
     .about{
+        justify-content: space-between;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         row-gap: 24px;
-        column-gap: 27%;
+        column-gap: 10%;
     }
     .about:first-child, .about:last-child{
         margin-left: 3.8%;
@@ -45,5 +49,9 @@
         justify-content: space-between;
         margin-top: 20px;
         margin-bottom: 36px;
+    }
+
+    .footer > *{
+        width: 100%;
     }
 }
