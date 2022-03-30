@@ -6,6 +6,7 @@
     align-items: start;
     background-color: white;
     border-radius: 10px;
+    
 }
 
 .subheading{
@@ -38,4 +39,6 @@
 .petPhoto{
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
+    width: 320px;height: 250px;
+    object-fit: cover;
 }

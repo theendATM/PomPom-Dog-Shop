@@ -1,6 +1,8 @@
 import React from "react";
 import "./AnimalsFilter.css"
 
+import { storage } from "../../storage/PomPomStorage";
+
 function AnimalsFilter(){
 
     return(
@@ -10,7 +12,7 @@ function AnimalsFilter(){
                 <option name="smallDogs">Маленькая (до 10кг)</option>
                 <option name="mediumDogs">Средняя (от 10кг до 25кг)</option>
                 <option name="hugeDogs">Большая (от 25кг)</option>
-                <option name="allSizeDogs">Любой размер</option> 
+                <option name="allSizeDogs">Любой размер</option>
             </select>
 
             <select className="hairLength" name="hairLength">
@@ -20,7 +22,7 @@ function AnimalsFilter(){
                 <option name="allHairLength">Любая длина волос</option>
             </select>
 
-            <select className="breedSelector" name="breedSelector">
+            <select className="breedSelector" name="breedSelector" onChange={(e) => storage.dispatch({ type: e.target.value.toLowerCase() })}>
                 <option hidden name="allBreeds">Порода</option>
                 <option name="sheepdog">Овчарка</option>
                 <option name="spitz">Шпиц</option>
