@@ -6,6 +6,7 @@ import { Button, DogInfoBox } from '../../components'; //
 import { useState, useEffect } from 'react';
 import { getImage } from '../../API/dogapi';
 import { PageBase } from '../PageBase';
+import PetCard from '../../components/PetCard/PetCard.js';
 
 export const DogInfoPage = (props) => {
 
@@ -81,11 +82,19 @@ export const DogInfoPage = (props) => {
                     <div className={style.sepLine}></div>
                     <div className={style.similar}>
                         <p>Похожие объявления</p>
-                        <div className={style.dogShowcase}></div>
+                        <div className={style.dogShowcase}>
+                            <PetCard/>
+                            <PetCard/>
+                            <PetCard/>
+                        </div>
                     </div>
                     <div className={style.watched}>
                         <p>Уже просмотренные</p>
-                        <div className={style.dogShowcase}></div>
+                        <div className={style.dogShowcase}>
+                            <PetCard/>
+                            <PetCard/>
+                            <PetCard/>
+                        </div>
                     </div>
                 </div>
             </div>
