@@ -1,0 +1,39 @@
+#shade{
+    background: rgba(49, 47, 25, 0.3);
+    position: fixed;
+    width:100%;
+    height: 100%;
+    margin: 0;
+    top: 0;
+    z-index: 12;
+}
+#burger-menu{
+    background-color: #F4F5F4;
+    width:300px;
+    float:right;
+    
+}
+
+#buttons-container{
+    z-index: 13;
+    
+    display: flex;
+    flex-direction: column;
+    height:100vh;
+    top:0;
+}
+button{
+    appearance: none;
+    border: none;
+    background-color: #F4F5F4;;
+}
+
+button:active{
+    background-color: #FED60F;
+}
+
+@media screen and (max-width:415px) {
+    #shade{
+        display: block;
+    }
+}
