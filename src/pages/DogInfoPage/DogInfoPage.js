@@ -7,6 +7,7 @@ import { useState, useEffect } from 'react';
 import { getImage } from '../../API/dogapi';
 import { PageBase } from '../PageBase';
 import PetCard from '../../components/PetCard/PetCard.js';
+import { useParams } from 'react-router-dom';
 
 export const DogInfoPage = (props) => {
 
@@ -26,6 +27,10 @@ export const DogInfoPage = (props) => {
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center'
     }
+
+    const {id}=useParams()
+
+    console.log(id)
 
     return (
         <PageBase>
