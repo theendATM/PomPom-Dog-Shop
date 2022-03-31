@@ -1,14 +1,11 @@
 import React from "react";
 import "./AnimalsFilter.css"
 import ChooseSign from "./ChooseSign.svg";
-
-<<<<<<< HEAD
-
 import { storage } from "../../storage/PomPomStorage";
 import { useSelector } from "react-redux";
-=======
+
 function AnimalsFilter(){
->>>>>>> mobile
+
 
     return(
         <div className="AnimalsFilter">

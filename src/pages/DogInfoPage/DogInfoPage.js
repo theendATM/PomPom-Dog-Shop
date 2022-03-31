@@ -118,6 +118,7 @@ export const DogInfoPage = (props) => {
                         <div className={style.dogShowcase}>
                             <PetCard/>
                             <PetCard/>
+                            <PetCard/>
                         </div>
                     </div>
                 </div>
