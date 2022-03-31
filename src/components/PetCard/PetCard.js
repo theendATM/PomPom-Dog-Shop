@@ -15,28 +15,48 @@ import { breedData } from "../../API/dogapi";
 function PetCard(props) {
     const [address, setAddress] = useState(broken)
 
-    const [breed, setBreed] = useState("shiba")
+    const [breed, setBreed] = useState("all")
+    const [age, setAge] = useState("4 месяца")
+    const [name,setName]=useState("")
+    const [cost,setCost]=useState("")
 
-    const currentBreedFilter = useSelector(filterState => filterState.query)
+    const currentSizeFilter = useSelector(filterState => filterState.size)
+    const currentFurLengthFilter = useSelector(filterState => filterState.furLength)
+    const currentBreedFilter = useSelector(filterState => filterState.breed)
 
-   //console.log()
+    //console.log()
 
     useEffect(() => {
-        getRandomDog(currentBreedFilter).then(data => {
-            setBreed(data.breed)
-            setAddress(data.url)
-        })
+        getRandomDog(currentBreedFilter, currentSizeFilter, currentFurLengthFilter)
+        .then(
+            (data) => {
 
+                setBreed(data.breed)
+                setAddress(data.url)
+                setAge("4 месяца")
+                setName(breedData[data.breed].name)
+                setCost(breedData[data.breed].cost)
 
-    }, [useSelector(filterState => filterState.query)])
+            },
+            (err) => {
+                setBreed("")
+                setAddress(broken)
+                setAge("")
+                setName("")
+                setCost("")
+
+            }, 
+        )
+    },
+        [useSelector(f => f.breed), useSelector(f => f.size), useSelector(f => f.furLength)])
 
     return (
         <div className="petBlock">
             <img className="petPhoto" src={address} alt="пёсель" />
             <div className="petInfo">
-                <p className="breed subheading">{breedData[breed].name}</p>
-                <p className="age avarage">4 месяца</p>
-                <p className="price avarageBig">{breedData[breed].cost}</p>
+                <p className="breed subheading">{name}</p>
+                <p className="age avarage">{age}</p>
+                <p className="price avarageBig">{cost}</p>
             </div>
 
 
