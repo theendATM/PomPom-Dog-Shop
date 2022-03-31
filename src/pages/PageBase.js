@@ -1,5 +1,5 @@
 import { Header,Footer } from "../components"
-import { BurgerMenu } from "../components/BurgerMenu/BurgerMenu"
+import {BurgerMenu} from "../components/BurgerMenu/BurgerMenu"
 
 export function PageBase(props) {
     return (
