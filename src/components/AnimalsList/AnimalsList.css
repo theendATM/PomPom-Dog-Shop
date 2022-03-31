@@ -5,8 +5,9 @@
     grid-template-columns: repeat(auto-fit, 320px);
     width: 77%;
     justify-content: center;
-    
+    margin-bottom: 40px;
 }
+
 
 @media screen and (max-width: 415px) {
     .AnimalsList{
