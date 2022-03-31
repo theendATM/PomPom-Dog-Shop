@@ -11,9 +11,6 @@ export const Button = (props) => {
     }
 
     return (
-        <div className='buttonContainer'>
-            <a className={style.button} style={buttonStyle} href=''>{props.text}</a>
-        </div>
-        
+        <a className={style.button} style={buttonStyle} href=''>{props.text}</a>
     )
 }
