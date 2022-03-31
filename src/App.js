@@ -7,7 +7,6 @@ import AnimalsList from './components/AnimalsList/AnimalsList.js'
 import AnimalsFilter from './components/AnimalsFilter/AnimalsFilter';
 import CompanyInfo from './pages/CompanyInfo/CompanyInfo';
 import AuthorizationLogIn from './components/Authorization/AuthorizationLogIn';
-import AuthorizationSignUp from './components/Authorization/AuthorizationSignUp';
 import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
 import { AllPets } from './pages/AllPets';
 

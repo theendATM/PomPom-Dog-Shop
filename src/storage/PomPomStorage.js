@@ -14,7 +14,6 @@ const initState = {
 }
 
 const queryReducer = (state = initState, action) => {
-
     switch (action.type) {
         case "CHANGEBREED": return { ...state, breed: BreedTypes[action.payload] }
         case "CHANGELENGTH": return { ...state, furLength: action.payload }
