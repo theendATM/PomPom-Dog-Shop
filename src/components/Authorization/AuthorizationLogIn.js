@@ -1,19 +1,25 @@
 import React, { useState } from "react";
 import { createPortal } from "react-dom";
+import { storage } from "../../storage/PomPomStorage";
 import "./AuthorizationLogIn.css"
 import AuthorizationSignUp from "./AuthorizationSignUp.js"
 import Cross from "./Vector.svg"
 
+function close(e) {
+    if (e.target.id === "authorize-shade") {
+        storage.dispatch({ type: "NOAUTH" })
+    }
+}
 
 function AuthorizationLogIn(props) {
     //return null;
 
     if (props.visible && document.getElementById("portal") != null)
         return createPortal(
-            <div id="authorize-shade">
+            <div id="authorize-shade" onClick={close}>
                 <div className="AuthorizationLogIn">
                     <h3>POMPOM</h3>
-                    <img className="cross" src={Cross} />
+                    <img className="cross" src={Cross} onClick={() => storage.dispatch({ type: "NOAUTH" })} />
                     <p>Войти с помощью электронной почты</p>
                     <div className="formButtons">
                         <input type="email" name="email" required placeholder="E-mail" />
