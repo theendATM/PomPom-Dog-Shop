@@ -11,6 +11,10 @@ export const Button = (props) => {
     }
 
     return (
+<<<<<<< HEAD
         <a className={style.button} style={buttonStyle} href=''onClick={props.onClick}>{props.text} </a>
+=======
+        <a className={style.button} style={buttonStyle} href=''>{props.text}</a>
+>>>>>>> mobile
     )
 }

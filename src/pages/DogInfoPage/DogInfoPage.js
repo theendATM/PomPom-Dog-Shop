@@ -22,8 +22,9 @@ export const DogInfoPage = (props) => {
     // }
 
     const dogPictureStyle = {
-        background: `url(${imgSrc}) no-repeat center`,
-        backgroundSize: 'cover'
+        backgroundImage: `url(${imgSrc})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center'
     }
 
     return (
@@ -35,7 +36,6 @@ export const DogInfoPage = (props) => {
                         <p>Назад</p>
                     </a>
                 </div>
-                <div>
                     <div className={style.dogInfo}>
                         <div className={style.dogPicture} style={dogPictureStyle}>
                             <div className={style.dogPictureButtons}>
@@ -63,8 +63,25 @@ export const DogInfoPage = (props) => {
                                 <p className={style.addInfoText}>Размер взрослой собаки: 50-60см, шерсть гипоаллегренная</p>
                             </div>
                         </div>
+                        <div className={style.dogProfile_mobile}>
+                            <div className={style.dogMainInfo}>
+                                <div className={style.infoBox}>
+                                    <div className={style.dogText}>
+                                        <div>
+                                            <p className={style.dogName}>Самоед щенок</p>
+                                            <p className={style.dogDescription}>Дружелюбная, веселая, добрая к другим собакам и детям</p>
+                                        </div>
+                                        <p className={style.dogPrice}>40 000 ₽</p>
+                                    </div>
+
+
+                                    <div className={style.dogTextBottom}>
+                                        <Button text='Записаться на просмотр' fontSize={12} isBorder={true} />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
                 <div className={style.dogParams}>
                     <DogInfoBox title='Порода' info='Самоед' />
                     <DogInfoBox title='Пол' info='Женский' />
@@ -77,6 +94,14 @@ export const DogInfoPage = (props) => {
                 <div className={style.dogHistory}>
                     <Button text='Посмотреть родословную' fontSize={16} />
                     <Button text='Вакцинация' fontSize={16} />
+                </div>
+                <div className={style.dogHistory_mobile}>
+                    <Button text='Посмотреть родословную' fontSize={11} />
+                    <Button text='Вакцинация' fontSize={11} />
+                </div>
+                <div className={style.addInfo_mobile}>
+                    <p>Дополнительная информация:</p>
+                    <p className={style.addInfoText}>Размер взрослой собаки: 50-60см, шерсть гипоаллегренная</p>
                 </div>
                 <div className={style.reccomendations}>
                     <div className={style.sepLine}></div>
@@ -93,7 +118,10 @@ export const DogInfoPage = (props) => {
                         <div className={style.dogShowcase}>
                             <PetCard/>
                             <PetCard/>
+<<<<<<< HEAD
                             <PetCard/>
+=======
+>>>>>>> mobile
                         </div>
                     </div>
                 </div>

@@ -2,17 +2,20 @@ import React from "react";
 import "./AnimalsFilter.css"
 import ChooseSign from "./ChooseSign.svg";
 
+<<<<<<< HEAD
 
 import { storage } from "../../storage/PomPomStorage";
 import { useSelector } from "react-redux";
+=======
+function AnimalsFilter(){
+>>>>>>> mobile
 
     return(
         <div className="AnimalsFilter">
             <button className="hiddenFilter">Показать фильтры  
                 <img className="chooseSign" src={ChooseSign}/>
             </button>
-
-
+            
 
             <select className="sizeSelector" name="sizeSelector">
                 <option hidden name="allSizeDogs">Размер</option>

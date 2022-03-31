@@ -31,38 +31,3 @@ p{
     gap: 50px;
     margin-bottom: 100px;
 }
-
-@media screen and (max-width: 415px) {
-    .CompanyInfo{
-        width: 92%;
-    }
-    
-    h1{
-        font-size: 32px;
-        line-height: 36px;
-        font-weight: 400;
-        margin-left: 16px;
-    }
-    .mainInfo p{
-        font-size: 12px;
-        line-height: 18px;
-        text-align: start;
-        margin-left: 16px;
-    }
-    
-    .mainBanner{
-        height:286px;
-        margin-top: 16px;
-        margin-bottom: 28px;
-
-    }
-    
-    .mainBanner img{
-        height: 286px;
-    }
-    
-    .mainInfo{
-        gap: 20px;
-        margin-bottom: 150px;
-    }
-}
