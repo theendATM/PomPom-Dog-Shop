@@ -5,6 +5,10 @@
     overflow: hidden;
 }
 
+.dogInfoPage p{
+    text-align: start;
+}
+
 .returnBackButton{
     display: flex;
     align-items: center;
@@ -167,8 +171,6 @@
     margin-top: 30px;
     padding-left: 5%;
 
-<<<<<<< HEAD
-=======
 }
 
 .addInfo_mobile{
@@ -304,5 +306,4 @@
         gap: 20px;
         padding: 0;
     }
->>>>>>> mobile
 }

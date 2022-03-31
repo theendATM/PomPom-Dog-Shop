@@ -1,3 +1,8 @@
+.main p{
+    text-align: start;
+}
+
+
 .main{
     width: 100%;
     display: flex;
@@ -85,13 +90,15 @@
 
 .reasonToChoose p{
     font-size: 16px;
+    line-height: 22px;
 }
 
 .reasonCard {
     background-color: #EDEBE5;
-    width: 310px;
+    width: 330px;
     height: 200px;
     border-radius: 10px;
+    padding: 10px;
 
     display: flex;
     align-items: center;
@@ -202,6 +209,7 @@
 
     font-size: 16px;
     padding-left: 20px;
+    text-align: start;
 }
 .articles a{
     text-decoration: none;
