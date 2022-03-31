@@ -118,10 +118,7 @@ export const DogInfoPage = (props) => {
                         <div className={style.dogShowcase}>
                             <PetCard/>
                             <PetCard/>
-<<<<<<< HEAD
                             <PetCard/>
-=======
->>>>>>> mobile
                         </div>
                     </div>
                 </div>
