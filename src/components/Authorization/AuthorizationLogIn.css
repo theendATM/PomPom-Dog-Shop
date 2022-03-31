@@ -7,11 +7,7 @@
     background-color: #F4F5F4;
     border-radius: 10px;
 
-    position: inherit;
-
-    left:50%;
-    margin-left:-355px;
-    top: 118px;
+    margin:118px auto;
 
     z-index: 12;
 }
