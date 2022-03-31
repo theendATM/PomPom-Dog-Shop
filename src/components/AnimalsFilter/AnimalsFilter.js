@@ -4,6 +4,9 @@ import ChooseSign from "./ChooseSign.svg";
 import { storage } from "../../storage/PomPomStorage";
 import { useSelector } from "react-redux";
 
+function AnimalsFilter(){
+
+
     return(
         <div className="AnimalsFilter">
             <button className="hiddenFilter">Показать фильтры  
