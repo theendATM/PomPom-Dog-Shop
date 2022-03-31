@@ -9,6 +9,7 @@
 .dogCardHover > p{
     font-size: 24px;
     background-color: #bdbdbd;
+    outline: 2px solid rgb(70, 70, 70);
     border-radius: 5px;
     padding: 0 5px;
 }
