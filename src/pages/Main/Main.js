@@ -26,8 +26,8 @@ export const Main = () => {
                         <div><Button text='Выбрать питомца' fontSize={20} /></div>
                     </div>
                     <div className={style.shopPictures}>
-                        <img class={style.imgLeft} src={image_left} alt='img_left' />
-                        <img class={style.imgRight} src={image_right} alt='img_right' />
+                        <img className={style.imgLeft} src={image_left} alt='img_left' />
+                        <img className={style.imgRight} src={image_right} alt='img_right' />
                     </div>
                 </div>
                 <div className={style.reasonToChoose}>
