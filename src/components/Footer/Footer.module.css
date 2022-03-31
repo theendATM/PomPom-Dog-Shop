@@ -25,10 +25,11 @@
 
 @media screen and (max-width: 415px) {
     .footer{
-        width: 90%;
+        width: 100%;
         flex-direction: column;
         gap: 0;
         height: fit-content;
+        align-items: center;
         margin-top: 29px;
         box-sizing: border-box;
         padding: 16px 20px;
@@ -41,9 +42,6 @@
         row-gap: 24px;
         column-gap: 10%;
     }
-    .about:first-child, .about:last-child{
-        margin-left: 3.8%;
-    }
 
     .socialNetwork{
         display: flex;
@@ -54,5 +52,6 @@
 
     .footer > *{
         width: 100%;
+        margin-left: 0px;
     }
 }

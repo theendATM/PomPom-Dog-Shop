@@ -5,6 +5,10 @@
     overflow: hidden;
 }
 
+.dogInfoPage p{
+    text-align: start;
+}
+
 .returnBackButton{
     display: flex;
     align-items: center;
