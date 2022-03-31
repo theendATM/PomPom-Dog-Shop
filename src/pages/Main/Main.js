@@ -23,7 +23,7 @@ export const Main = () => {
                             И что-то про собак. Они хорошие. Этот текст довольно длинный.
                             Наверное, еще подлинее. Купите себе собаку.</p>
                         <p className={style.ourText}>а вот второй абзац. Он короткий</p>
-                        <div><Button text='Выбрать питомца' fontSize={20} /></div>
+                        <div className={style.ourInfoButtonWrapper}><Button text='Выбрать питомца' fontSize={20} /></div>
                     </div>
                     <div className={style.shopPictures}>
                         <img class={style.imgLeft} src={image_left} alt='img_left' />
@@ -42,6 +42,14 @@ export const Main = () => {
                     <div className={style.reasonCard + ' ' + style.reasonCardRight}>
                         <p id={style.reasonTextRight}>Третья причина почему мы хороши</p>
                         <img src={main_reasonImageRight} alt='main_reasonImageRight' />
+                    </div>
+                </div>
+                <div className={style.reasonToChoose_mobile}>
+                    <img src={main_reasonImageRight} className={style.reasonImageRight} alt='main_reasonImageRight' />
+                    <div className={style.reasonText_mobile}>
+                        <p>Здесь текст первой причины выбора нашего магазина</p>
+                        <p>Здесь написан текст второй причины</p>
+                        <p>Третья причина почему мы хороши</p>
                     </div>
                 </div>
                 <div className={style.dogCategory}>
@@ -75,6 +83,32 @@ export const Main = () => {
                             <a href=''>Читать далее</a>
                         </div>
                         <img src={main_articleImageRight} />
+                    </div>
+                </div>
+                <div className={style.articles_mobile}>
+                    <div className={style.articleTop_mobile}>
+                        <p>Что нужно знать перед приобретением собаки?</p>
+                        <div>
+                            <img src={main_articleImageLeft} />
+                            <div className={style.articleTop_text}>
+                                <ul>
+                                    <li>Возможные трудности</li>
+                                    <li>Небоходимые вещи</li>
+                                    <li>Воспитание</li>
+                                    <li>Подбор корма</li>
+                                </ul>
+                                <a href=''>Читать далее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className={style.articleBottom_mobile}>
+                        <div className={style.articleBottom_mobile_text}>
+                            <p>Еще какая-то статья</p>
+                            <a href=''>Читать далее</a>
+                        </div>
+                        <div className={style.article_mobile_image}>
+                            <img src={main_articleImageRight} />
+                        </div>
                     </div>
                 </div>
             </div>

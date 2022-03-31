@@ -6,6 +6,7 @@ import { Button, DogInfoBox } from '../../components'; //
 import { useState, useEffect } from 'react';
 import { getImage } from '../../API/dogapi';
 import { PageBase } from '../PageBase';
+import PetCard from '../../components/PetCard/PetCard.js';
 
 export const DogInfoPage = (props) => {
 
@@ -21,8 +22,9 @@ export const DogInfoPage = (props) => {
     // }
 
     const dogPictureStyle = {
-        background: `url(${imgSrc}) no-repeat center`,
-        backgroundSize: 'cover'
+        backgroundImage: `url(${imgSrc})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center'
     }
 
     return (
@@ -34,7 +36,6 @@ export const DogInfoPage = (props) => {
                         <p>Назад</p>
                     </a>
                 </div>
-                <div>
                     <div className={style.dogInfo}>
                         <div className={style.dogPicture} style={dogPictureStyle}>
                             <div className={style.dogPictureButtons}>
@@ -62,8 +63,25 @@ export const DogInfoPage = (props) => {
                                 <p className={style.addInfoText}>Размер взрослой собаки: 50-60см, шерсть гипоаллегренная</p>
                             </div>
                         </div>
+                        <div className={style.dogProfile_mobile}>
+                            <div className={style.dogMainInfo}>
+                                <div className={style.infoBox}>
+                                    <div className={style.dogText}>
+                                        <div>
+                                            <p className={style.dogName}>Самоед щенок</p>
+                                            <p className={style.dogDescription}>Дружелюбная, веселая, добрая к другим собакам и детям</p>
+                                        </div>
+                                        <p className={style.dogPrice}>40 000 ₽</p>
+                                    </div>
+
+
+                                    <div className={style.dogTextBottom}>
+                                        <Button text='Записаться на просмотр' fontSize={12} isBorder={true} />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
                 <div className={style.dogParams}>
                     <DogInfoBox title='Порода' info='Самоед' />
                     <DogInfoBox title='Пол' info='Женский' />
@@ -77,15 +95,30 @@ export const DogInfoPage = (props) => {
                     <Button text='Посмотреть родословную' fontSize={16} />
                     <Button text='Вакцинация' fontSize={16} />
                 </div>
+                <div className={style.dogHistory_mobile}>
+                    <Button text='Посмотреть родословную' fontSize={11} />
+                    <Button text='Вакцинация' fontSize={11} />
+                </div>
+                <div className={style.addInfo_mobile}>
+                    <p>Дополнительная информация:</p>
+                    <p className={style.addInfoText}>Размер взрослой собаки: 50-60см, шерсть гипоаллегренная</p>
+                </div>
                 <div className={style.reccomendations}>
                     <div className={style.sepLine}></div>
                     <div className={style.similar}>
                         <p>Похожие объявления</p>
-                        <div className={style.dogShowcase}></div>
+                        <div className={style.dogShowcase}>
+                            <PetCard/>
+                            <PetCard/>
+                            <PetCard/>
+                        </div>
                     </div>
                     <div className={style.watched}>
                         <p>Уже просмотренные</p>
-                        <div className={style.dogShowcase}></div>
+                        <div className={style.dogShowcase}>
+                            <PetCard/>
+                            <PetCard/>
+                        </div>
                     </div>
                 </div>
             </div>

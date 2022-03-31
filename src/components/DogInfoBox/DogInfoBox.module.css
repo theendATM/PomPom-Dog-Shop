@@ -16,3 +16,23 @@
 .info{
     font-size: 20px;
 }
+
+
+@media screen and (max-width: 415px) {
+
+    .dogInfoBox{
+        padding: 4px 12px;
+    }
+
+    .title{
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .info{
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    
+}
