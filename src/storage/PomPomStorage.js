@@ -11,10 +11,6 @@ const queryReducer = (state=initState , action) => {
         case "CHANGE": return { query: BreedTypes[action.payload - 1] }
         default:return initState
     }
-
-   
-
-
 }
 
 export const storage = createStore(queryReducer,initState)
