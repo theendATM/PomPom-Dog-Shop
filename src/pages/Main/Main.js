@@ -12,6 +12,7 @@ import main_articleImageRight from '../../assets/main_articleImageRight.png';
 import { PageBase } from '../PageBase';
 import {useNavigate} from 'react-router-dom'
 
+
 export const Main = () => {
 
     const navigate=useNavigate()

@@ -4,8 +4,13 @@ import image from '../../assets/logo.png';
 import { Navigation_Button } from '../Navigation_Button';
 import { Button } from '../Button';
 import burger from '../../mobile/burger.svg';
-
 import {useNavigate} from 'react-router-dom'
+import { storage } from '../../storage/PomPomStorage';
+
+
+function logIn(){
+    storage.dispatch({type:"LOGIN"})
+}
 
 export const Header = (props) => {
 
@@ -27,7 +32,7 @@ export const Header = (props) => {
                     <Navigation_Button text='О нас' onClick={()=>navigate("/about")} />
                 </div>
                 <div className={style.loginButton}>
-                    <Button fontSize={16} text='Войти' />
+                    <Button fontSize={16} text='Войти' onClick={logIn} />
                 </div>
             </div>
         </header>
