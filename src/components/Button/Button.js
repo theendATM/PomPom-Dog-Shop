@@ -7,10 +7,10 @@ export const Button = (props) => {
 
     const buttonStyle = {
         fontSize: `${props.fontSize}px`,
-        border: props.isBorder ? "1px solid black" : "none"  
+        border: props.isBorder ? "1px solid black" : "none",
     }
 
     return (
-        <a className={style.button} style={buttonStyle} href=''onClick={props.onClick}>{props.text} </a>
+        <button className={style.button} style={buttonStyle} onClick={props.onClick}>{props.text} </button>
     )
 }

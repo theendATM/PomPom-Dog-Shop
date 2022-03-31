@@ -8,6 +8,16 @@ import { btnStateStorage } from "../../storage/PageState";
 import { useSelector, useDispatch } from 'react-redux';
 
 import {useNavigate} from 'react-router-dom'
+import { storage } from '../../storage/PomPomStorage';
+
+
+function logIn(){
+    storage.dispatch({type:"LOGIN"})
+}
+
+function selectPage(index){
+    storage.dispatch({type:"OPENPAGE",payload:index})
+}
 
 export const Header = (props) => {
 
@@ -32,7 +42,7 @@ export const Header = (props) => {
                     <Navigation_Button text='О нас' onClick={()=>{changeNavStyle("ABOUT_PAGE"); navigate("/about")}} isActive={btnStates.about}/>
                 </div>
                 <div className={style.loginButton}>
-                    <Button fontSize={16} text='Войти' />
+                    <Button fontSize={16} text='Войти' onClick={logIn} />
                 </div>
             </div>
         </header>

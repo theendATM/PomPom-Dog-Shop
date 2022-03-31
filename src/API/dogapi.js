@@ -8,7 +8,18 @@ export const BreedTypes = [
     "shiba",
     "akita",]
 
+const CleanBreeds = [
+    "germanshepherd",
+    "pomeranian",
+    "shiba",
+    "akita",]
+
 export const breedData = {
+    "": {
+        name: "",
+        cost: ""
+
+    },
     "shiba": {
         name: "Сиба-Ину",
         cost: "40 000 ₽"
@@ -27,9 +38,22 @@ export const breedData = {
     },
 }
 
+export const breedSizes = [
+    CleanBreeds,
+    ["pomeranian"],
+    ["shiba"],
+    ["germanshepherd", "akita"],
+]
+
+export const furLength = [
+    CleanBreeds,
+    ["shiba", "akita"],
+    ["pomeranian", "germanshepherd"],
+]
+
 
 export const getImage = async (breed) => {
-    if (breed == "all"||breed==null) {
+    if (breed == "all" || breed == null) {
 
         const request = await fetch("https://dog.ceo/api/breeds/image/random")
         const data = await request.json()
@@ -47,19 +71,22 @@ export const getImage = async (breed) => {
     }
 }
 
+export const getRandomDog = async (breedToFetch = null, size = 0, fur = 0, age = 0) => {
 
-export const getRandomDog = async (breedToFetch = null) => {
 
-    if (breedToFetch != null&&breedToFetch!="all") {
-        var data = await getImage(breedToFetch)
+    if (breedToFetch != null && breedToFetch != "all") {
+        let data = await getImage(breedToFetch)
         return { "breed": breedToFetch, "url": data.message }
     }
     else {
-        const request = await fetch("https://dog.ceo/api/breeds/list")
-        const data = await request.json()
+        const arr = furLength[fur].filter(t => breedSizes[size].includes(t));
 
-        const msg = BreedTypes.slice(1, BreedTypes.length)
-        const fetchedBreed = msg[Math.floor(Math.random() * msg.length)]
+        if (arr.length < 1) {
+            return Promise.reject("Found nothing.")
+        }
+
+        //const msg = arr.slice(1, BreedTypes.length)
+        const fetchedBreed = arr[Math.floor(Math.random() * arr.length)]
 
         const imgRequest = await fetch(`https://dog.ceo/api/breed/${fetchedBreed}/images/random`)
         const imgData = await imgRequest.json()
