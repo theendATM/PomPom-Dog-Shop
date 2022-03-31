@@ -21,6 +21,7 @@ function App() {
           <Route path='/all' element={<AllPets />} />
           <Route path='/' element={<Main />} />
           <Route path='/about' element={<CompanyInfo />} />
+          <Route path='/view' element={<DogInfoPage />} />
         </Routes>
       </BrowserRouter>
     </div>

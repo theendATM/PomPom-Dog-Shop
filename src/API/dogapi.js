@@ -29,7 +29,7 @@ export const breedData = {
 
 
 export const getImage = async (breed) => {
-    if (breed == "all") {
+    if (breed == "all"||breed==null) {
 
         const request = await fetch("https://dog.ceo/api/breeds/image/random")
         const data = await request.json()
