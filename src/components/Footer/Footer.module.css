@@ -22,3 +22,29 @@
     width: 30px;
     height: 30px;
 }
+
+@media screen and (max-width: 415px) {
+    .footer{
+        width: 90%;
+        display: inline;
+        height: 270px;
+        margin-top: 29px;
+    }
+
+    .about{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 24px;
+        column-gap: 27%;
+    }
+    .about:first-child, .about:last-child{
+        margin-left: 3.8%;
+    }
+
+    .socialNetwork{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        margin-bottom: 36px;
+    }
+}
