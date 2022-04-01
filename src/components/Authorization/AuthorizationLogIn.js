@@ -30,7 +30,7 @@ function AuthorizationLogIn(props) {
             <div id="authorize-shade" onClick={close}>
                 <div className="AuthorizationLogIn">
                     <h3>POMPOM</h3>
-                    <img className="cross" src={Cross} onClick={close} />
+                    <img className="cross" src={Cross} onClick={()=>storage.dispatch({type:"NOAUTH"})} />
                     <p>{signup ? "Регистрация" : "Войти с помощью электронной почты"}</p>
                     <div className="formButtons">
 

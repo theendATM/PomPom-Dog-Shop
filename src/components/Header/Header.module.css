@@ -15,6 +15,7 @@
 .logo {
     height: 100px;
     width: 100px;
+    cursor: pointer;
 }
 
 .header__buttons{
@@ -67,5 +68,6 @@
     .burger{
         height: 32px;
         width: 40px;
+        cursor: pointer;
     }
 }

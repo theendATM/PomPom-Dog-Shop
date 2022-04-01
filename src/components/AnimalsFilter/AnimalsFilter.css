@@ -1,4 +1,4 @@
-.AnimalsFilter{
+.AnimalsFilter {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
@@ -6,16 +6,33 @@
     width: 93%;
     margin-top: 28px;
     margin-bottom: 36px;
-    
+
     filter: drop-shadow(3px 3px 16px rgba(31, 71, 101, 0.05));
 }
-.hiddenFilter{
+
+@font-face {
+    font-family: Open Sans;
+    src: url(../../fonts/OpenSans.ttf);
+}
+
+.hiddenFilter {
     display: none;
 }
 
-select{
+.AnimalsFilter>select {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    /* identical to box height, or 130% */
+
+
+    color: #221E05;
+}
+
+select {
     appearance: none;
-    font: inherit;
     letter-spacing: inherit;
     word-spacing: inherit;
     height: 54px;
@@ -30,19 +47,19 @@ select{
     background-repeat: no-repeat;
     background-position: calc(100% - 20px);
     border: 0;
-    border-radius:0;
-    
+    border-radius: 5px;
+
 
     outline: #C5C2B3;
-    
+
 }
 
-select:focus{
+select:focus {
     border: medium;
 }
 
 @media screen and (max-width: 415px) {
-    .hiddenFilter{
+    .hiddenFilter {
         display: inline;
         width: 92%;
         display: flex;
@@ -54,21 +71,22 @@ select:focus{
         border: 0px;
         background-color: #FAFAFA;
         border-radius: 2px;
-        
+
     }
 
-    .AnimalsFilter{
+    .AnimalsFilter {
         margin-top: 8px;
         margin-bottom: 16px;
         width: 100%;
         justify-content: center
     }
-    .chooseSign{
+
+    .chooseSign {
         width: 10px;
         margin-left: 16px;
     }
 
-    select{
+    select {
         display: none;
     }
 }

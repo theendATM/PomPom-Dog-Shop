@@ -1,4 +1,9 @@
-.petBlock{
+@font-face {
+    font-family: Open Sans;
+    src: url(../../fonts/OpenSans.ttf);
+}
+
+.petBlock {
     width: 320px;
     height: 380px;
     display: flex;
@@ -6,77 +11,110 @@
     align-items: start;
     background-color: white;
     border-radius: 10px;
-    
+
 }
 
-.subheading{
+.subheading {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
     font-size: 24px;
     line-height: 30px;
+    /* identical to box height, or 125% */
+
+
+    color: #221E05;
+
+
 }
-.avarage{
+
+.avarage {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 22px;
+    /* identical to box height, or 138% */
+
+
+    color: #221E05;
 }
-.avarageBig{
+
+.avarageBig {
     font-size: 20px;
     line-height: 26px;
 }
-.petInfo{
+
+.petInfo {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding-left: 20px;
 }
 
-.price{
+.price {
     padding-top: 20px;
 }
 
-.breed{
+.breed {
     padding-top: 16px;
 }
 
-.petPhoto{
+.petPhoto {
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     width: 320px;
-    height:250px;
+    height: 250px;
     object-fit: cover;
+    cursor: pointer;
+
+    
 }
-
-
 
 
 @media screen and (max-width: 415px) {
 
-    .petBlock{
+    .petBlock {
         width: 180px;
         height: 215px;
     }
-    .subheading{
+
+    .subheading {
         font-size: 14px;
         line-height: 17px;
     }
-    .avarage{
+
+    .avarage {
         font-size: 10px;
         line-height: 15px;
     }
-    .avarageBig{
-        font-size: 11px;
-        line-height: 16px;
+
+    .avarageBig {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 26px;
+        /* identical to box height, or 130% */
+
+
+        color: #221E05;
+
     }
 
-    .petInfo{
+    .petInfo {
         padding-left: 12px;
     }
 
-    .price{
+    .price {
         padding-top: 12px;
     }
-    .breed{
+
+    .breed {
         padding-top: 8px;
     }
-    .petPhoto{
+
+    .petPhoto {
         border-top-right-radius: 6px;
         border-top-left-radius: 6px;
         width: 180px;
