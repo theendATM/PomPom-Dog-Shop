@@ -25,7 +25,7 @@ export function BurgerMenu(props) {
     return (
         createPortal(
 
-            <div id="shade">
+            <div id="shade" onClick={close}>
                 <div id="pane">
                     <img id="cross" src={Cross} onClick={close} />
                     <div id="buttons-container">
