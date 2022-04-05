@@ -19,6 +19,10 @@ function selectPage(index){
     storage.dispatch({type:"OPENPAGE",payload:index})
 }
 
+function openBurger(){
+    storage.dispatch({type:"OPENMENU"})
+}
+
 export const Header = (props) => {
 
     const navigate = useNavigate()
@@ -31,8 +35,8 @@ export const Header = (props) => {
 
     return (
         <header className={style.header}>
-            <img className={style.logo} src={image} />
-            <img className={style.burger} src={burger}/>
+            <img className={style.logo} src={image} onClick={()=>{navigate("/");changeNavStyle("MAIN_PAGE")}} />
+            <img className={style.burger} src={burger} onClick={openBurger}/>
             <div className={style.header__buttons}>
                 <div className={style.navButtons}>
                     <Navigation_Button text='Главная' onClick={()=>{changeNavStyle("MAIN_PAGE"); navigate("/")}} isActive={btnStates.main}/>

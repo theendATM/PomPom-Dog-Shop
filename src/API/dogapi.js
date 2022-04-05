@@ -75,6 +75,12 @@ export const getRandomDog = async (breedToFetch = null, size = 0, fur = 0, age =
 
 
     if (breedToFetch != null && breedToFetch != "all") {
+
+        const arr = furLength[fur].filter(t => breedSizes[size].includes(t));
+
+        if (!arr.includes(breedToFetch))
+            return Promise.reject("Found nothing.")
+
         let data = await getImage(breedToFetch)
         return { "breed": breedToFetch, "url": data.message }
     }
@@ -84,6 +90,7 @@ export const getRandomDog = async (breedToFetch = null, size = 0, fur = 0, age =
         if (arr.length < 1) {
             return Promise.reject("Found nothing.")
         }
+
 
         //const msg = arr.slice(1, BreedTypes.length)
         const fetchedBreed = arr[Math.floor(Math.random() * arr.length)]

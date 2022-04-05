@@ -11,14 +11,22 @@ import { getImage } from "../../API/dogapi";
 import broken from "./broken.png"
 import { getRandomDog } from "../../API/dogapi";
 import { breedData } from "../../API/dogapi";
+import { useNavigate } from "react-router-dom";
 
 function PetCard(props) {
+
+
+    const navigate = useNavigate()
+
+    
+
+
     const [address, setAddress] = useState(broken)
 
     const [breed, setBreed] = useState("all")
     const [age, setAge] = useState("4 месяца")
-    const [name,setName]=useState("")
-    const [cost,setCost]=useState("")
+    const [name, setName] = useState("")
+    const [cost, setCost]=useState("")
 
     const currentSizeFilter = useSelector(filterState => filterState.size)
     const currentFurLengthFilter = useSelector(filterState => filterState.furLength)
@@ -52,9 +60,9 @@ function PetCard(props) {
 
     return (
         <div className="petBlock">
-            <img className="petPhoto" src={address} alt="пёсель" />
+            <img className="petPhoto" src={address} alt="пёсель" draggable={false} onClick={()=>{navigate("/view/" + props.id); window.scrollTo(0)}} />
             <div className="petInfo">
-                <p className="breed subheading">{name}</p>
+                <p className="breed subheading"  onClick={()=>{navigate("/view/" + props.id); window.scrollTo(0)}}>{name} </p>
                 <p className="age avarage">{age}</p>
                 <p className="price avarageBig">{cost}</p>
             </div>

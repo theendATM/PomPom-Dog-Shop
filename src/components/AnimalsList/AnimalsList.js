@@ -11,21 +11,12 @@ function AnimalsList(props) {
 
 
     for(let i=0;i<useSelector(t=>t.queryResultsCount);i++){
-        cards.push(<PetCard key={i}/>)
+        cards.push(<PetCard key={i} id={i}/>)
     }
 
     return (
         <div className="AnimalsList">
             {cards}
-            {/* <PetCard />
-            <PetCard />
-            <PetCard />
-            <PetCard />
-            <PetCard />
-            <PetCard />
-            <PetCard />
-            <PetCard />
-            <PetCard /> */}
         </div>
         //для подгрузки карточек при скроллинге будем вызывать по 1му анималлисту?  
     )
