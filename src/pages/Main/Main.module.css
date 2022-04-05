@@ -36,6 +36,7 @@
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    padding-right: 40px;
 }
 
 .ourTitle{
@@ -149,6 +150,7 @@
 .dogCategory > p{
     font-size: 24px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .dogShowcase{
@@ -394,6 +396,7 @@
         font-size: 11px;
         padding-left: 20px;
         width: fit-content;
+        text-align: start;
     }
 
     .articleTop_text{
