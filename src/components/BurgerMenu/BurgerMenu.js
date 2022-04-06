@@ -9,6 +9,10 @@ function close() {
     storage.dispatch({ type: "CLOSEMENU" })
 }
 
+function logIn(){
+    storage.dispatch({type:"LOGIN"})
+}
+
 export function BurgerMenu(props) {
 
     const navigate = useNavigate()
@@ -32,7 +36,7 @@ export function BurgerMenu(props) {
                         <button onClick={() => { changeNavStyle("MAIN_PAGE"); navigate("/"); close() }}>Главная</button>
                         <button onClick={() => { changeNavStyle("ALLPETS_PAGE"); navigate("/all"); close() }}>Все питомцы</button>
                         <button onClick={() => { changeNavStyle("ABOUT_PAGE"); navigate("/about"); close() }} >О нас</button>
-                        <button>Войти или зарегистрироваться</button>
+                        <button onClick={logIn}>Войти или зарегистрироваться</button>
                     </div>
                 </div>
             </div>,

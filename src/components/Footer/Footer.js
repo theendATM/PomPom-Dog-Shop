@@ -9,8 +9,17 @@ import facebook_icon from '../../assets/facebook_icon.png';
 import twitter_icon from '../../assets/twitter_icon.png';
 import instagram_icon from '../../assets/instagram_icon.png';
 import whatsapp_icon from '../../assets/whatsapp_icon.png';
+import { btnStateStorage } from '../../storage/PageState';
+import { useNavigate } from 'react-router-dom';
+
 
 export const Footer = () => {
+
+    const changeNavStyle = (btnType) => {
+        btnStateStorage.dispatch({type:btnType})
+    }
+
+    const navigate=useNavigate()
 
     return (
         <footer className={style.footer}>
@@ -25,7 +34,7 @@ export const Footer = () => {
                 <img src={twitter_icon} alt='twitter'/>
                 <img src={instagram_icon} alt='instagram'/>
             </div>
-            <Button text='Выбрать питомца' fontSize={20}/>
+            <Button text='Выбрать питомца' fontSize={20} onClick={()=>{changeNavStyle("ALLPETS_PAGE"); navigate("/all")}}/>
         </footer>
     )
 }

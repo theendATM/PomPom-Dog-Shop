@@ -11,9 +11,13 @@ import main_articleImageLeft from '../../assets/main_articleImageLeft.png';
 import main_articleImageRight from '../../assets/main_articleImageRight.png';
 import { PageBase } from '../PageBase';
 import {useNavigate} from 'react-router-dom'
-
+import { btnStateStorage } from '../../storage/PageState';
 
 export const Main = () => {
+
+    const changeNavStyle = (btnType) => {
+        btnStateStorage.dispatch({type:btnType})
+    }
 
     const navigate=useNavigate()
     return (
@@ -26,7 +30,7 @@ export const Main = () => {
                             И что-то про собак. Они хорошие. Этот текст довольно длинный.
                             Наверное, еще подлинее. Купите себе собаку.</p>
                         <p className={style.ourText}>а вот второй абзац. Он короткий</p>
-                        <div className={style.ourInfoButtonWrapper}><Button text='Выбрать питомца' fontSize={20} onClick={()=>navigate("/all")} /></div>
+                        <div className={style.ourInfoButtonWrapper}><Button text='Выбрать питомца' fontSize={20} onClick={()=>{changeNavStyle("ALLPETS_PAGE"); navigate("/all")}} /></div>
                     </div>
                     <div className={style.shopPictures}>
                         <img className={style.imgLeft} src={image_left} alt='img_left' />
