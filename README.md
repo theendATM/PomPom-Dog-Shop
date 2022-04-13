@@ -1,3 +1,4 @@
 # donstux
 
-## Awesome project by Diana, Arseny, Vladislav % Evgenia
+## Awesome project by Evgenia & Diana, Arseny, Vladislav
+
